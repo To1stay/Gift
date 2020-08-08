@@ -1,0 +1,49 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>STORY OF ME</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>  
+</head>
+
+<body>
+
+ <div class="outerContainer"> 
+        <h3 class="written-in-ink"><a href="https://www.inklestudios.com/ink">WRITTEN IN INK</a></h3>
+        <div id="story" class="container">
+            <div class="header">
+                <h1>STORY OF ME</h1>
+                <h2 class="byline"></h2> 
+            </div>
+        </div>
+ </div>
+
+ <div id='gitalk-container'> 
+ </div>
+ </b:includable>
+ <script type="text/javascript">
+        var gitalk = new Gitalk({
+        clientID: '7cc1dc6861a3ca471686',
+        clientSecret: 'dd733957cf553713dcd6c41690e1c07896f1524c',
+        repo: 'Gift',
+        owner: 'To1stay',
+        admin: 'To1stay',
+        id: location.pathname,      // Ensure uniqueness and length less than 50
+  distractionFreeMode: false  // Facebook-like distraction free mode
+})
+
+        gitalk.render('gitalk-container')
+ </script>
+    <script src="ink.js"></script>
+    <script src="Untitled.js"></script>
+    <script src="main.js"></script>     
+
+</body>
+</html>
